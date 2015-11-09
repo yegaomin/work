@@ -1,0 +1,47 @@
+<html>
+<head>
+<style>
+	#img{
+		border:1px solid green;width:500px;height:500px; overflow:hidden;
+		position:relative;
+	}
+	#img img{
+		position:absolute;cursor:pointer;
+	}
+	.zhe{
+		display:none;left:0;top:0;width:20px;height:20px;
+		position:relative;
+	}
+	.zhe .new p{
+		position:absolute;
+	}
+</style>
+ <link rel="stylesheet" href="js/jquery-ui/jquery-ui.min.css">
+ <script src="js/jquery-1.11.3.js"></script>
+ <script src="js/jquery-ui/jquery-ui.min.js"></script>
+</head>
+<script type="text/javascript">
+$(function(){
+
+	$('#img').draggable();
+	$('#img img').draggable();
+
+
+	$('#dianji').click(function(){
+		var imghtml=$('#img').html();
+		var elem=$('<div/>').addClass('new').html(imghtml);
+		elem.draggable();
+		$('.zhe').append(elem);
+		$('.zhe').show();
+
+	})
+})
+</script>
+<body>
+	<div id="dianji">点击</div>
+	<div id="img">
+		<img src="0.jpg"/>
+	</div>
+	<div class="zhe"></div>
+</body>
+</html>
