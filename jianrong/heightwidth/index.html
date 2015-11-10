@@ -1,0 +1,73 @@
+<html>
+<head>
+<style>
+	body{
+		margin:0;
+	}
+	div{
+		margin:0;padding:0;
+	}
+	/*关于padding和margin*/
+	div{
+		width:100px;height:50px;background:red;overflow:hidden;
+	}
+	.divone{
+		background:green;padding-left:10px;padding:10px;margin-left:20px;padding-left:-10px;margin-left:-20px;
+	}
+	.divtwo{
+		background:red;
+	}
+	.divthree{
+		background:yellow;
+	}
+	/*关于display:inline-block;*/
+	.d_one{
+		width:200px;background:red;margin-top:10px;overflow:auto;height:200px;
+	}
+	.d_one .d_two{
+		display:inline-block;background:green;
+	}
+	.d_one .d_three{
+		display:inline-block;background:yellow;
+	}
+
+	.dd_one{
+		width:300px;margin-top:10px;
+	}
+	.dd_one a{
+		padding:10px;display:inline;
+	}
+
+	.dd_one .dd_o{
+		background:green;
+	}
+	.dd_one .dd_n{
+		background:#fff;
+	}
+	.dd_one .dd_e{
+		background:yellow;
+	}
+
+</style>
+</head>
+<body>
+<div class="divone">
+	one
+	<div class="divtwo">
+		two
+		<div class="divthree">one</div>
+	</div>
+</div>
+
+<div class="d_one">
+	<div class="d_two">22222</div>
+	<div class="d_three">3333</div>
+</div>
+
+<div class="dd_one">
+	<a class="dd_o">one</a>
+	<a class="dd_n">two</a>
+	<a class="dd_e">three</a>
+</div>
+</body>
+</html>

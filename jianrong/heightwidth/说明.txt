@@ -1,0 +1,13 @@
+1.对于padding，ie6认为这是属于width或height的。
+其他浏览器认为这是属于width或height以外。
+margin所有浏览器认为是width或height以外的部分。
+
+注意：padding为负数时不会有效果，margin可以为负数，且各个浏览器都支持。
+
+2.ie7+或其他浏览器，当display:inline;时元素的宽高不起作用，起作用的是内部的大小。
+  ie6时不支持display:inline 
+	
+  所有浏览器都支持display:inline-block;元素宽高起作用。
+
+http://www.zhangxinxu.com/wordpress/2010/11/%E6%8B%9C%E6%8B%9C%E4%BA%86%E6%B5%AE%E5%8A%A8%E5%B8%83%E5%B1%80-%E5%9F%BA%E4%BA%8Edisplayinline-block%E7%9A%84%E5%88%97%E8%A1%A8%E5%B8%83%E5%B1%80/
+http://www.zhangxinxu.com/study/201204/inline-block-space-word-spacing.html
